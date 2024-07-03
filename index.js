@@ -22,10 +22,10 @@ function onover(){
   let target= document.querySelector(".nav");
   target.style.animation="detail 2s";
   target.style.display="block";
-  target.style.position="relative";
-  target.style.left="650px";
+  // target.style.position="relative";
+  // target.style.left="650px";
   
-  target.style.transform="translateX(-40px)";
+  // target.style.transform="translateX(-40px)";
   
 
 
