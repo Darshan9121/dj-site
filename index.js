@@ -15,11 +15,31 @@ function myFunction() {
 
 
 function onover(){
- let target= document.querySelector(".nav");
-target.style.display="block";
-target.style.transition="all 2s";
+  
+  let logo = document.querySelector('.b_logo');
+  logo.style.animation=" fade-out 4s ease-in-out 1";
+  logo.style.display="none";
+  let target= document.querySelector(".nav");
+  target.style.animation="detail 2s";
+  target.style.display="block";
+  target.style.position="relative";
+  target.style.left="650px";
+  
+  target.style.transform="translateX(-40px)";
+  
 
 
+}
+
+function photo(){
+
+  let target = document.querySelector("#dj");
+  target.setAttribute("animation","photo 15s 1 alternate");
+  target.setAttribute("src","ASSETS/dev.png");
+
+  // target.style.animation="photo 5s ease-in-out 1 alternate";
+  target.setAttribute("object-position","top right");
+  // target.style.animation="photo 5s 1 inverse";
 }
 
 document.addEventListener("DOMContentLoaded",reveal());
